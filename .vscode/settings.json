@@ -1,5 +1,6 @@
 {
   "files.exclude": {
+    ".firebase/": true,
     "**/dist": true,
     "**/node_modules/": true
   },

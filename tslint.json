@@ -1,20 +1,17 @@
 {
   "defaultSeverity": "warning",
-  "extends": [
-    "tslint:recommended"
-  ],
+  "extends": ["tslint:recommended"],
   "linterOptions": {
-    "exclude": [
-      "node_modules/**"
-    ]
+    "exclude": ["node_modules/**"]
   },
   "rules": {
-    "semicolon": [true, "never"],
+    "quotemark": [true, "double"],
+    "semicolon": [true, "always"],
+
     "no-empty-interface": false,
     "trailing-comma": [true, { "multiline": "ignore", "singleline": "never" }],
     "no-console": { "severity": "warning" },
     "ordered-imports": false,
-    "quotemark": [true, "single"],
     "indent": [true, "spaces", 2],
     "no-consecutive-blank-lines": true,
     "interface-name": false,

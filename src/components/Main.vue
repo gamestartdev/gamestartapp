@@ -2,32 +2,39 @@
   <v-container>
     <v-layout text-xs-center wrap>
       <v-flex xs12>
-        <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="200"></v-img>
+        <v-img :src="require('../assets/logo.png')" class="my-3" contain height="200"></v-img>
       </v-flex>
 
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">GameStart School</h1>
         <p
           class="subheading font-weight-regular"
-        >We are a tribe of artists, programmers, educators, and game designers
-          <br>using video games to change the world.
+        >We are a cohort of artists, programmers, educators, and game designers
+          <br>connecting youth to a creative relationship with technology.
         </p>
       </v-flex>
 
-      <v-flex xs12>
-        <h2 class="headline font-weight-bold mb-3">Rough Statistics</h2>
-        <p class="subheading font-weight-regular">[Outreach, Courses, Hospitals]</p>
-      </v-flex>
-
       <WhatsNext/>
-
       <v-flex xs12>
-        <h2 class="headline font-weight-bold mb-3">Cofounders</h2>
-        <p class="subheading font-weight-regular">TEDX VIDEO</p>
+        <h2 class="headline font-weight-bold mb-3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rYCDaXgcKCA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </h2>
+        <p
+          class="subheading font-weight-regular"
+        >In 2013, Nate and David started volunteering to teach after school programs kids how to program using video games. 
+        <br>In 2014 they gave a TEDx talk which generated a flood of interest and by 2017 the program had become a thriving social enterprise serving afterschool programs, hospitalized children facing life-threatening illness, youth navigating the juvenile detention system,</p>
       </v-flex>
+
 
       <v-flex xs12 mb-5>
-        <h2 class="headline font-weight-bold mb-3">Project Archive</h2>
+        <h2 class="headline font-weight-bold mb-3">In the News</h2>
         <v-layout justify-center>
           <a
             v-for="(link, i) in importantLinks"
@@ -39,11 +46,9 @@
         </v-layout>
       </v-flex>
 
-      <v-flex xs12>
-        <h2 class="headline font-weight-bold mb-3">Why We Play</h2>
-        <p class="subheading font-weight-regular">a b c d e</p>
-      </v-flex>
+
       <Partners/>
+
     </v-layout>
   </v-container>
 </template>
@@ -56,41 +61,27 @@ import Curricula from "./Curricula.vue";
 
 @Component({ components: { Partners, WhatsNext, Curricula } })
 export default class App extends Vue {
-  ecosystem = [
-    {
-      text: "vuetify-loader",
-      href: "https://github.com/vuetifyjs/vuetify-loader"
-    },
-    {
-      text: "github",
-      href: "https://github.com/vuetifyjs/vuetify"
-    },
-    {
-      text: "awesome-vuetify",
-      href: "https://github.com/vuetifyjs/awesome-vuetify"
-    }
-  ];
 
   importantLinks = [
     {
-      text: "Documentation",
-      href: "https://vuetifyjs.com"
+      text: "Click On Detroit",
+      href: "http://bit.ly/GS_ClickOnDetroit"
     },
     {
-      text: "Chat",
-      href: "https://community.vuetifyjs.com"
+      text: "Concentrate Media",
+      href: "http://bit.ly/GS_Concentrate"
     },
     {
-      text: "Made with Vuetify",
-      href: "https://madewithvuetifyjs.com"
+      text: "Ann Arbor Observer",
+      href: "http://bit.ly/GS_Observer"
     },
     {
-      text: "Twitter",
-      href: "https://twitter.com/vuetifyjs"
+      text: "Crazy Wisdom",
+      href: "http://bit.ly/GS_CrazyWisdom"
     },
     {
-      text: "Articles",
-      href: "https://medium.com/vuetify"
+      text: "NBC Nightly News",
+      href: "http://bit.ly/GS_NbcNightly"
     }
   ];
 }
